@@ -25,6 +25,7 @@ class HomeFragment : Fragment() {
                 val action = HomeFragmentDirections.actionHomeFragmentToLogInScreen()
                 findNavController().navigate(action)   //with Safe args
 //              findNavController().navigate(R.id.action_homeFragment_to_logInScreen) // without Safe args
+
             }
             return binding.root
     }

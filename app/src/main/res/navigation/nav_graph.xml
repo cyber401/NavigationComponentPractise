@@ -19,5 +19,18 @@
         android:id="@+id/logInScreen"
         android:name="com.example.navigationcomponentpractise.LogInScreen"
         android:label="fragment_log_in_screen"
-        tools:layout="@layout/fragment_log_in_screen" />
+        tools:layout="@layout/fragment_log_in_screen" >
+        <action
+            android:id="@+id/action_logInScreen_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.navigationcomponentpractise.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
 </navigation>
