@@ -13,7 +13,7 @@
         <action
             android:id="@+id/action_homeFragment_to_logInScreen"
             app:destination="@id/logInScreen"
-            app:exitAnim="@anim/from_right" />
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/logInScreen"
