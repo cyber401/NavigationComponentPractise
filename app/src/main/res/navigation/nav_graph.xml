@@ -22,7 +22,10 @@
         tools:layout="@layout/fragment_log_in_screen" >
         <action
             android:id="@+id/action_logInScreen_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            app:destination="@id/welcomeFragment" >
+            <argument
+                android:name="userName" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -32,5 +35,10 @@
         <argument
             android:name="userName"
             app:argType="string" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
