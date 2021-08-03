@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.navigationcomponentpractise.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_logInScreen"
             app:destination="@id/logInScreen"
@@ -18,19 +18,18 @@
     <fragment
         android:id="@+id/logInScreen"
         android:name="com.example.navigationcomponentpractise.LogInScreen"
-        android:label="fragment_log_in_screen"
-        tools:layout="@layout/fragment_log_in_screen" >
+        android:label="LogIn"
+        tools:layout="@layout/fragment_log_in_screen">
         <action
             android:id="@+id/action_logInScreen_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" >
-            <argument
-                android:name="userName" />
+            app:destination="@id/welcomeFragment">
+            <argument android:name="userName" />
         </action>
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.example.navigationcomponentpractise.WelcomeFragment"
-        android:label="fragment_welcome"
+        android:label="Welcome {userName}"
         tools:layout="@layout/fragment_welcome" >
         <argument
             android:name="userName"
