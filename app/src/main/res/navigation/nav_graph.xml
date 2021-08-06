@@ -54,7 +54,7 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.navigationcomponentpractise.SearchFragment"
-        android:label="SearchFragment"
+        android:label="Search"
         tools:layout="@layout/search_fragment" />
 
 </navigation>
